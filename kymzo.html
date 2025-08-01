@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>kymzo</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; /* Ensures padding doesn't affect total width */
+      }
+
+      body {
+        background-color: #cdcdcd;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 16px; /* Prevents bubble from touching screen edges */
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          sans-serif; /* Better mobile readability */
+      }
+
+      .bubble {
+        padding: clamp(16px, 5vw, 24px) clamp(24px, 8vw, 32px); /* Responsive padding */
+        background-color: #fff;
+        color: #333;
+        border-radius: 12px; /* Softer rounded corners */
+        text-align: center;
+        font-size: clamp(16px, 5vw, 20px); /* Responsive text */
+        max-width: 90%; /* Prevents overflow on small screens */
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        word-break: break-word; /* Prevents long text from breaking layout */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bubble">
+      <h1>Hello! This is a zombie page! You can stay however much you want!</h1>
+    </div>
+  </body>
+</html>
